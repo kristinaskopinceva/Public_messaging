@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Message {
     @Id // поле id будет идентификаторм
-    @GeneratedValue(strategy= GenerationType.AUTO) // фреймвор сам разобраслся в каком видет индентификаторы будут генерится
+    @GeneratedValue(strategy= GenerationType.AUTO) // автогенерация айдишника
     private int id;
      private String text;
        private String tag;
