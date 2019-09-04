@@ -1,4 +1,4 @@
-package connection.Entity;
+package com.scheme.news_feed.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,16 +9,18 @@ import javax.persistence.Id;
 @Entity
 public class Message {
     @Id // поле id будет идентификаторм
-    @GeneratedValue(strategy= GenerationType.AUTO) // автогенерация айдишника
+    @GeneratedValue(strategy = GenerationType.AUTO) // автогенерация айдишника
     private int id;
-     private String text;
-       private String tag;
-         public Message(){}
+    private String text;
+    private String tag;
 
-         public Message(String text, String tag){
-             this.tag = tag;
-             this.text = text;
-         }
+    public Message() {
+    }
+
+    public Message(String text, String tag) {
+        this.tag = tag;
+        this.text = text;
+    }
 
     public int getId() {
         return id;

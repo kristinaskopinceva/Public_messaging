@@ -1,6 +1,6 @@
-package connection.repos;
+package com.scheme.news_feed.repos;
 
-import connection.Entity.Message;
+import com.scheme.news_feed.domain.Message;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
